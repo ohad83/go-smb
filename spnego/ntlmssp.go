@@ -31,8 +31,8 @@ import (
 
 	"github.com/jfjallid/gofork/encoding/asn1"
 
-	"github.com/jfjallid/go-smb/gss"
-	"github.com/jfjallid/go-smb/ntlmssp"
+	"github.com/ohad83/go-smb/gss"
+	"github.com/ohad83/go-smb/ntlmssp"
 )
 
 // NTLMInitiator implements session setup through NTLMv2.

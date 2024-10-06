@@ -2,10 +2,11 @@ package spnego
 
 import (
 	"fmt"
+
 	"github.com/jfjallid/gofork/encoding/asn1"
 
-	"github.com/jfjallid/go-smb/gss"
-	"github.com/jfjallid/go-smb/smb/encoder"
+	"github.com/ohad83/go-smb/gss"
+	"github.com/ohad83/go-smb/smb/encoder"
 )
 
 // MS-SPNG

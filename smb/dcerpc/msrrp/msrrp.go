@@ -27,11 +27,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jfjallid/go-smb/smb/dcerpc"
 	"github.com/jfjallid/golog"
+	"github.com/ohad83/go-smb/smb/dcerpc"
 )
 
-var log = golog.Get("github.com/jfjallid/go-smb/smb/dcerpc/msrrp")
+var log = golog.Get("github.com/ohad83/go-smb/smb/dcerpc/msrrp")
 
 var (
 	MSRRPUuid                = "338CD001-2244-31F1-AAAA-900038001003"

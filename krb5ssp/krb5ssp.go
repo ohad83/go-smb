@@ -30,17 +30,17 @@ import (
 
 	"github.com/jfjallid/gofork/encoding/asn1"
 
-	"github.com/jfjallid/go-smb/gss"
 	"github.com/jfjallid/gokrb5/v8/client"
 	"github.com/jfjallid/gokrb5/v8/config"
 	"github.com/jfjallid/gokrb5/v8/crypto"
 	"github.com/jfjallid/gokrb5/v8/messages"
 	"github.com/jfjallid/gokrb5/v8/types"
 	"github.com/jfjallid/golog"
+	"github.com/ohad83/go-smb/gss"
 )
 
 var le = binary.LittleEndian
-var log = golog.Get("github.com/jfjallid/go-smb/krb5ssp")
+var log = golog.Get("github.com/ohad83/go-smb/krb5ssp")
 
 // Possible values for the KRB5Token struct's TokenId field
 const (

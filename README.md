@@ -111,9 +111,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/jfjallid/go-smb/smb"
-	"github.com/jfjallid/go-smb/spnego"
-	"github.com/jfjallid/go-smb/smb/dcerpc"
+	"github.com/ohad83/go-smb/smb"
+	"github.com/ohad83/go-smb/spnego"
+	"github.com/ohad83/go-smb/smb/dcerpc"
 )
 
 func main() {

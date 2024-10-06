@@ -27,14 +27,15 @@ import (
 	"encoding/binary"
 	"encoding/hex"
 	"fmt"
-	"github.com/jfjallid/gofork/encoding/asn1"
 	"net"
 	"sync/atomic"
 	"time"
 
-	"github.com/jfjallid/go-smb/gss"
-	"github.com/jfjallid/go-smb/ntlmssp"
-	"github.com/jfjallid/go-smb/smb/encoder"
+	"github.com/jfjallid/gofork/encoding/asn1"
+
+	"github.com/ohad83/go-smb/gss"
+	"github.com/ohad83/go-smb/ntlmssp"
+	"github.com/ohad83/go-smb/smb/encoder"
 )
 
 // Useful with a generic struct when we don't know if this is a Negotiate or Auth message

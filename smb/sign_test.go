@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/hex"
 
-	"github.com/jfjallid/go-smb/smb/crypto/cmac"
+	"github.com/ohad83/go-smb/smb/crypto/cmac"
 
 	"testing"
 )

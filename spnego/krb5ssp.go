@@ -29,12 +29,12 @@ import (
 
 	"github.com/jfjallid/gofork/encoding/asn1"
 
-	"github.com/jfjallid/go-smb/gss"
-	"github.com/jfjallid/go-smb/krb5ssp"
 	"github.com/jfjallid/golog"
+	"github.com/ohad83/go-smb/gss"
+	"github.com/ohad83/go-smb/krb5ssp"
 )
 
-var log = golog.Get("github.com/jfjallid/go-smb/spnego")
+var log = golog.Get("github.com/ohad83/go-smb/spnego")
 var le = binary.LittleEndian
 
 // RFC4120 Section 5.3 Tickets, flags:

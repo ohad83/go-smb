@@ -37,8 +37,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/jfjallid/go-smb/gss"
-	"github.com/jfjallid/go-smb/smb/encoder"
+	"github.com/ohad83/go-smb/gss"
+	"github.com/ohad83/go-smb/smb/encoder"
 )
 
 type requestResponse struct {
@@ -219,7 +219,7 @@ func (c *Connection) runReceiver() {
 			   If dialect is 3.1.1, If message is not encrypted check message signature.
 			   If dialect is NOT 3.1.1, check signing only if required
 			*/
-			if ((c.dialect == DialectSmb_3_1_1) && !encrypted && (c.sessionFlags & (SessionFlagIsGuest|SessionFlagIsNull) == 0)) || ((c.dialect != DialectSmb_3_1_1) && c.Session.isSigningRequired.Load()) {
+			if ((c.dialect == DialectSmb_3_1_1) && !encrypted && (c.sessionFlags&(SessionFlagIsGuest|SessionFlagIsNull) == 0)) || ((c.dialect != DialectSmb_3_1_1) && c.Session.isSigningRequired.Load()) {
 				// When server responds with StatusPending, the packet signature is the same as on the
 				// last packet and the signing flag is not set
 				if h.Status != StatusPending {
