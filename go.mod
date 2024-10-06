@@ -1,4 +1,4 @@
-module github.com/jfjallid/go-smb
+module github.com/ohad83/go-smb
 
 go 1.19
 
